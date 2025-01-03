@@ -1,0 +1,139 @@
+/* General section styling */
+section {
+    padding: 20px;
+    background: linear-gradient(135deg, #f9f9f9, #e8e8e8);
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Heading styles */
+section h2 {
+    font-size: 1.8rem;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+section h3 {
+    font-size: 1.4rem;
+    color: #444;
+    font-weight: 600;
+}
+
+/* Ingredients list styles */
+.ingredients-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.ingredients-list li {
+    background:rgba(0, 0, 0, 0);
+    color: #555;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.ingredients-list li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Get recipe container styles */
+.get-recipe-container {
+    margin-top: 20px;
+    padding: 20px;
+    background: linear-gradient(135deg, #fdfdfd, #f1f1f1);
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Get recipe button styles */
+.get-recipe-container button {
+    background-color: #6c63ff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 16px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3 ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.get-recipe-container button:hover {
+    background-color: #5348c3;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.get-recipe-container p {
+    color: #666;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.ingredient-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 8px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.ingredient-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.delete-btn {
+    background: none;
+    border: none;
+    color: #ff4d4d;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: color 0.2s;
+    margin-left: 0.5rem;
+}
+
+.delete-btn:hover {
+    color: #d41f1f;
+}
+
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .ingredients-list {
+        gap: 6px;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+
+    .get-recipe-container button {
+        width: 100%;
+    }
+}

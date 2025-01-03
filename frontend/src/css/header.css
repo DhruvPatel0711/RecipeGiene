@@ -1,0 +1,127 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: rgba(0, 0, 0, 0);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+header:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Slightly deeper shadow on hover */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain; /* Ensures the logo doesn't get distorted */
+}
+
+.logo h1 {
+    font-size: 3rem;
+    color: #333;
+    font-family: "Bebas Neue", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Navigation */
+.navigation {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.nav {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #555;
+    padding: 0.5rem;
+    border: 2px solid rgba(0, 0, 0, 0);
+    border-radius: 0.5rem;
+    transition: all 0.6 ease-in-out;
+}
+
+.nav a:hover {
+    color: #333;
+    transform: scale(1.05); /* Slight scaling effect */
+    border: 2px solid #333;
+}
+
+.Sign/Login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login {
+    padding: 0.5rem 1.5rem;
+    font-size: 1.1rem;
+    color: white;
+    background-color: #ff5747;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    margin-top: 0%;
+}
+
+.avatar{
+    border-radius: 50%;
+    width: 50px;
+    height: auto;
+    margin-right: 0.5rem;
+}
+
+.profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login:hover {
+    background-color: #ff5747;
+    box-shadow: 0 0 20px #ff5747, 0 0 30px #ff5747;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .navigation {
+        margin-top: 1rem;
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .Sign/Login {
+        margin-top: 1rem;
+    }
+}
