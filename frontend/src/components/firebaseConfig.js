@@ -1,14 +1,7 @@
 import { initializeApp } from "firebase/app";
 import { getAuth, GoogleAuthProvider } from "firebase/auth";
 
-const firebaseConfig = {
-  apiKey: "AIzaSyA7gj5tcuKxXew7NcQKkwMRGsb6uW3qMtc",
-  authDomain: "recipegiene.firebaseapp.com",
-  projectId: "recipegiene",
-  storageBucket: "recipegiene.appspot.com",
-  messagingSenderId: "554199743645",
-  appId: "1:554199743645:web:0023c6a2c36bd00f146874"
-};
+// make a variable and store the firebase details
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
